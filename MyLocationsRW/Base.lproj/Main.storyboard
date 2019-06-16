@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBD-Ir-YK5">
-                                <rect key="frame" x="16" y="75" width="63" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBD-Ir-YK5">
+                                <rect key="frame" x="16" y="75" width="68" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -58,9 +58,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qI-M7-hAD">
                                 <rect key="frame" x="16" y="465" width="288" height="30"/>
                                 <state key="normal" title="Get My Location"/>
+                                <connections>
+                                    <action selector="getLocation" destination="9pv-A4-QxB" eventType="touchUpInside" id="2IH-Dl-pto"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJW-vX-ZqB">
-                                <rect key="frame" x="16" y="104" width="77" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJW-vX-ZqB">
+                                <rect key="frame" x="16" y="104" width="82" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -94,11 +97,11 @@
                     <tabBarItem key="tabBarItem" title="Tag" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="addressLabel" destination="wVb-14-jBb" id="izR-JH-5qH"/>
-                        <outlet property="getButton" destination="1qI-M7-hAD" id="WVY-40-EN4"/>
+                        <outlet property="getButton" destination="1qI-M7-hAD" id="PvP-GV-lEJ"/>
                         <outlet property="latitudeLabel" destination="zNH-4w-Rxb" id="b8u-HO-4WN"/>
                         <outlet property="longitudeLabel" destination="6IQ-7R-FuC" id="t9K-ao-KAD"/>
                         <outlet property="messageLabel" destination="ZKZ-xJ-ews" id="qxw-T4-dU8"/>
-                        <outlet property="tagButton" destination="teA-ar-N9u" id="IWz-TG-BtL"/>
+                        <outlet property="tagButton" destination="teA-ar-N9u" id="XfA-yQ-Vq1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
